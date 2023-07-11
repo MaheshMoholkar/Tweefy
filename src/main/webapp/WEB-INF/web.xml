@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Tweefy</display-name>
+	
+	<servlet>
+		<servlet-name>Form</servlet-name>
+		<servlet-class>com.tweefy.Form</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Form</servlet-name>
+		<url-pattern>/form</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.tweefy.Login</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.tweefy.Register</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Buy</servlet-name>
+		<servlet-class>com.tweefy.Buy</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Buy</servlet-name>
+		<url-pattern>/buy</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Payment</servlet-name>
+		<servlet-class>com.tweefy.Payment</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Payment</servlet-name>
+		<url-pattern>/payment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>SendEmailServlet</servlet-name>
+    	<servlet-class>com.tweefy.Mail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>SendEmailServlet</servlet-name>
+    	<url-pattern>/mail</url-pattern>
+</servlet-mapping>
+	
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
